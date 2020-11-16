@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>FORM USERS</h1>
+    <form id = "fu">
+        <input type="text" placeholder="username" id="username">
+        <input type="email" placeholder="email" id="email">
+
+    </form>
+
+
+    <h1>PATTERN</h1>
+    <form id = "pattern">
+        <input type="number" placeholder="Masukan angka" id= "positifnumber">
+        <br><br>
+        <button type="button" name="Button" onclick="fungsiGanjil()">GANJIL</button>
+        <button type="button" name="button" onclick=""></button>
+
+    <h1>RESULT:</h1>
+    </form>
+
+    <h1>DERET FIBONACCI</h1>
+    <form id="fibo">
+        <input type="number" placeholder = "masukan angka">
+    <h1>RESULT:</h1>
+    </form>
+</body>
+<script>
+    let form = document.getElementById("fu")
+
+    function fungsiGanjil(){
+        let x, message;
+        x = document.getElementById("positifnumber").value;
+        
+        if( x==""){
+            alert ("angka kosong. Masukan angka yg benar");
+        } else if (isNan(x)) {
+            alert ("bukan angka. Masukan angka yg benar")
+        } else if (x>99){
+            alert ("Terlalu besar")
+        } else if ( x == 0){
+            alert("masukan yang benar")
+        } else {
+            message ="";
+            for (i=1; i<x;i+2){
+                message += i + " ";
+            }
+            document.getElementById("")
+        }
+    }
+</script>
+</html>
